@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42477D311A60C03000216AE9 /* SwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42477D301A60C03000216AE9 /* SwiftView.swift */; };
+		42477D331A60C15700216AE9 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42477D321A60C15700216AE9 /* SwiftViewController.swift */; };
 		426C0FCA1A41606800F2577C /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 426C0FC71A41606800F2577C /* information.png */; };
 		426C0FCB1A41606800F2577C /* information@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 426C0FC81A41606800F2577C /* information@2x.png */; };
 		426C0FCC1A41606800F2577C /* information@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 426C0FC91A41606800F2577C /* information@3x.png */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42477D2F1A60C03000216AE9 /* YOLayoutExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YOLayoutExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		42477D301A60C03000216AE9 /* SwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
+		42477D321A60C15700216AE9 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		426C0FC71A41606800F2577C /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
 		426C0FC81A41606800F2577C /* information@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information@2x.png"; sourceTree = "<group>"; };
 		426C0FC91A41606800F2577C /* information@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information@3x.png"; sourceTree = "<group>"; };
@@ -91,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42477D2E1A60C01300216AE9 /* SwiftExample */ = {
+			isa = PBXGroup;
+			children = (
+				42477D301A60C03000216AE9 /* SwiftView.swift */,
+				42477D2F1A60C03000216AE9 /* YOLayoutExample-Bridging-Header.h */,
+				42477D321A60C15700216AE9 /* SwiftViewController.swift */,
+			);
+			name = SwiftExample;
+			sourceTree = "<group>";
+		};
 		426C0FC61A41606800F2577C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +162,7 @@
 		42F5C2F01A3CAF3E00E37B78 /* YOLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				42477D2E1A60C01300216AE9 /* SwiftExample */,
 				426C0FDC1A41714900F2577C /* DynamicTableViewCells */,
 				426C0FD61A41714900F2577C /* DrawableViews */,
 				42F5C2F51A3CAF3E00E37B78 /* AppDelegate.h */,
@@ -304,11 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42477D311A60C03000216AE9 /* SwiftView.swift in Sources */,
 				42F5C31E1A3CAF7A00E37B78 /* YOCGUtils.m in Sources */,
 				426C0FE41A41714900F2577C /* TableViewCell.m in Sources */,
 				42F5C3201A3CAF7A00E37B78 /* YOView.m in Sources */,
 				42F5C2F71A3CAF3E00E37B78 /* AppDelegate.m in Sources */,
 				426C0FCF1A41629200F2577C /* LayoutExampleTableViewController.m in Sources */,
+				42477D331A60C15700216AE9 /* SwiftViewController.swift in Sources */,
 				426C0FE11A41714900F2577C /* DrawableView.m in Sources */,
 				426C0FE31A41714900F2577C /* DrawableViewController.m in Sources */,
 				426C0FE51A41714900F2577C /* TableViewController.m in Sources */,
@@ -420,9 +438,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YOLayoutExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YOLayoutExample/YOLayoutExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -430,9 +451,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YOLayoutExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YOLayoutExample/YOLayoutExample-Bridging-Header.h";
 			};
 			name = Release;
 		};
